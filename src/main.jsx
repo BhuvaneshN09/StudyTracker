@@ -5,7 +5,7 @@ import './styles.css'
 const DEFAULT_SUBJECTS = ['Advanced Functions', 'Calculus & Vectors', 'Physics', 'Chemistry', 'Earth & Space Science', 'Other']
 const STORE = 'studytrack-data-v1'
 const pad = n => String(n).padStart(2, '0')
-const formatTime = ms => { const mins = Math.floor(ms / 60000); return `${pad(Math.floor(mins / 60))}:${pad(mins % 60)}` }
+const formatTime = ms => { const totalSeconds = Math.floor(ms / 1000); const hours = Math.floor(totalSeconds / 3600); const mins = Math.floor((totalSeconds % 3600) / 60); return `${pad(hours)}:${pad(mins)}:${pad(totalSeconds % 60)}` }
 const formatLong = ms => { const mins = Math.max(1, Math.round(ms / 60000)); return mins >= 60 ? `${Math.floor(mins / 60)}h ${mins % 60}m` : `${mins}m` }
 const dayKey = d => new Date(d).toISOString().slice(0, 10)
 const sameWeek = (date, now) => { const a = new Date(date), b = new Date(now); const start = new Date(b); start.setHours(0,0,0,0); start.setDate(b.getDate() - ((b.getDay() + 6) % 7)); return a >= start }
