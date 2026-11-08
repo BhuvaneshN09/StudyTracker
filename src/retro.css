@@ -1,1 +1,2 @@
-:root{font-family:"Courier New",Courier,monospace}.starfield{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}.starfield span{position:absolute;display:block;background:#fff;border-radius:50%;box-shadow:0 0 5px rgba(255,255,255,.55)}main{position:relative;z-index:1}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root{font-family:"Press Start 2P","Courier New",Courier,monospace}button,input,select{font-family:inherit}.starfield{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}.starfield span{position:absolute;display:block;background:#fff;border-radius:50%;box-shadow:0 0 5px rgba(255,255,255,.55)}main{position:relative;z-index:1}
