@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './styles.css'
 import './clear-history.css'
 import './retro.css'
+import './milkyway.css'
 
 const DEFAULT_SUBJECTS = ['Advanced Functions', 'Calculus & Vectors', 'Physics', 'Chemistry', 'Earth & Space Science', 'Other']
 const STORE = 'studytrack-data-v1'
