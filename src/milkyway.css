@@ -1,1 +1,1 @@
-.starfield{background:#000}.starfield:before{inset:-30%;background-image:url('/milkyway.png');background-size:cover;background-position:center;filter:grayscale(1) brightness(.5);opacity:.78;transform:scale(1);animation:milkyway-rotate 600s linear infinite;will-change:transform}.starfield span{opacity:.28!important}@keyframes milkyway-rotate{from{transform:scale(1) rotate(0deg)}to{transform:scale(1) rotate(360deg)}}
+.starfield{background:#000}.starfield:before{display:none}.starfield span{opacity:.42!important}
